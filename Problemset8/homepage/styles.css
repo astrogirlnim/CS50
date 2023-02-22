@@ -1,0 +1,152 @@
+body {
+    background-color: #ece0ec;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.centered {
+    text-align:    center;
+}
+
+/* Grid specifications*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 1rem;
+}
+ .grid > div {
+     background: #e7d0e5;
+     padding:  0.5rem 2rem 1rem 2rem;
+     border-radius: 1rem;
+ }
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Tab specifications*/
+.tab {
+    position: relative;
+    background-color: #becedd;
+    color: white;
+    overflow: hidden;
+}
+
+/*Tab link styling*/
+.tab tablink {
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab a{
+    color: white;
+}
+.tab a:hover{
+    color: pink;
+}
+
+/* Tab hovering*/
+.tab tablink:hover {
+  background-color: #CBD5F0;
+}
+
+/*Right-aligned section of tab*/
+.tab-right{
+    float: right;
+}
+
+.jumbotron {
+    background-color: #becedd;
+    color: white;
+    margin-bottom: 2rem;
+    padding: inherit 1rem;
+    text-align: center;
+}
+
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+/*Center text*/
+.section centered{
+    text-align: center;
+    border: 3px white;
+}
+
+.section2 {
+    padding: 0.5rem 2rem 1rem 2rem;
+    justify-content: center;
+    align-items:center;
+}
+.section2:hover {
+    background-color: #cbd5f0;
+    opacity: 0.5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+/*Headers*/
+h1 {
+    font-family: Impact, Charcoal, serif;
+    font-size: 48px;
+    margin: 0.4rem 0;
+}
+.movingheader {
+    font-family: Charcoal, serif;
+    color: black;
+    font-size: 32px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+button, input[type="submit"] {
+    background-color: 	#a8c5d6;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+resume_pdf {
+    font-family: Impact, Charcoal, serif;
+    color: blue;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 5%;
+}
+

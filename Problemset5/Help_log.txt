@@ -1,0 +1,31 @@
+1. How to copy a string into an array?
+	https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm	
+	Link describes a function "strcopy."
+
+2. How to convert an unsigned char into a char?
+	https://stackoverflow.com/questions/15078638/can-i-turn-unsigned-char-into-char-and-vice-versa/15172304
+	I was having issues with unsigned char assignments with applying my hash function. Resolved with this/ reassigning my input variables to my hash function!
+
+3. How does a hash function interact with a hash table?
+	https://www.reddit.com/r/C_Programming/comments/2syijd/understanding_this_hash_function/
+	This code displays how to translate a hash into an index, which then corresponds to a bin number in a hash table. I applied the modulo logic (i.e. taking the modulo of the hash and the hash table array size) to my pset hash function.
+
+4. How do you read in a file line by line in C?
+	https://stackoverflow.com/questions/9206091/going-through-a-text-file-line-by-line-in-c
+	This link provides an example about how to properly open and close a file in C (as well as the need for a temporary buffer variable to store strings in).
+
+5. What hash functions can I use?
+	http://www.cse.yorku.ca/~oz/hash.html
+	A resource for three hash functions. I used the first one, djb2, in my pset.
+
+6. How to count the number of lines in a file?
+	https://www.geeksforgeeks.org/c-program-count-number-lines-file/
+	This link contains a snippet of code to cound the lines in a textfile (as well as provide an example for opening and closing a file with fopen and fclose). I applied some of this code to count the lines in the dictionary file.
+
+7. How to count the elements in a hash table?
+	https://stackoverflow.com/questions/15166329/counting-number-of-strings-in-hash-table
+	This is example code which I plan to alter/ apply the logic of for the size function.
+
+8. What is a singly linked list?
+	https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/
+	Relevant for counting the number of elements in each bucket of the hash table in the size function.

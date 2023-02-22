@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="textmove.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Nataly's Fun Portfolio</title>
+        <script>
+            // Applied with scrolling
+            // source: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+            window.onscroll = function() {move()};
+
+            // Get the header
+            var header = document.getElementById("movingheader");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function move() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <!--- Tabs to different pages--->
+        <div class="tab">
+            <div class="tab-right">
+                <tablink>
+                    <a href="About.html">About</a>
+                    </tablink>
+               <tablink>
+                    <a href="Resume.html">Resume</a>
+                    </tablink>
+                <tablink>
+                    <a href="Likesanddislikes.html">Likes & Dislikes</a>
+                    </tablink>
+                <tablink>
+                    <a href="index.html">Home</a>
+                    </tablink>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <h1>
+                Nataly's Portfolio
+            </h1>
+        </div>
+
+
+        <div class ="container">
+
+            <!--- Mask alert--->
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Mask Alert!</strong> Make sure to check the other tabs for more information. Also, please wear a mask. It's 2020 and covid is a nightmare.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+
+            <div class = "section">
+                <centered>
+                    <span class="movingheader" id="movingheader">
+                        <h2>Biomedical Engineer, Artist, Writer, and Business Co-Founder In-Training.
+                        </h2>
+                    </span>
+                </centered>
+
+            </div>
+
+
+            <div class="section2">
+                <div class="grid">
+
+                    <div class="centered">
+                        Based in Albuquerque and studying in Connecticut. Currently dreaming about what the view from the window of a plane looks like.
+                    </div>
+                    <div class="centered">
+                        I am pursuing a degree in Biomedical Engineering at Yale.
+                        As I got more and more into the field, I became interested in Medical Device Design. I’m now on the road to start my own company in personalized therapeutic treatment.
+                    </div>
+                    <div class="centered">
+                        I believe science and art are analogous.
+                        Over the years, I’ve been involved in multiple computational and lab-based research projects.
+                        I’ve been inspired to pursue my own artistic interests in tandem.
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>

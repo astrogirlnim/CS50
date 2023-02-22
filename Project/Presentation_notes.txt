@@ -1,0 +1,18 @@
+Who is presenting this project? *
+1. Kwaku Acquah
+2. Ignacy Jurjewicz
+
+Describe the project in just a few sentences. *
+1. LabRat: A platform where professors and students can upload lab information. The website posts lab positions with different interfaces for professors and students.
+
+2.Online planner website which connects to the google calendar and makes it easy to schedule meetings between people.
+
+Describe at least one feature that you particularly liked about the project. *
+1. I liked the way the project presented users and lab posts ina  table at each tab of the website.
+
+2. I liked that the website was able to connect to events on calendars connected to email accounts, as well as scheduled meetings that were convenient for different people.
+
+Make at least one suggestion for a feature that could be improved. * 
+1. The visuals of the website can be altered so that the tables are presented with different colors than the background. Additionally, it would be nice if professors could provide a link to the lab or the position.
+
+2. I appreciate that the registration works with google authentication pages. It would be nice if the website faciliated multiple timezones. 

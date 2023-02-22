@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>{{ balance | usd }}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for stock in summary %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.stock_name }}</td>
+                    <td>{{ stock.total_shares }}</td>
+                    <td>{{ stock.current_price | usd }}</td>
+                    <td>{{ stock.new_total | usd }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>{{  cash | usd  }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

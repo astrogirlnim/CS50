@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <!--Container class selected based on css file and staff solution website html!-->
+    <main class="container p-5">
+        <p>A share of {{ stock }} costs {{ value | usd }}.</p>
+    </main>
+{% endblock %}
